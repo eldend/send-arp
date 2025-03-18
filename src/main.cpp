@@ -30,7 +30,6 @@ int main(int argc, char* argv[]) {
     uint8_t my_mac[6] = {0}, sender_mac[6] = {0}, target_mac[6] = {0};
     char my_ip[INET_ADDRSTRLEN] = {0};
 
-    // Get network information (IP and MAC address)
     struct ifaddrs *ifaddr, *ifa;
     if (getifaddrs(&ifaddr) == -1) {
         return EXIT_FAILURE;
